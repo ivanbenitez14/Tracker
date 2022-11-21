@@ -1,0 +1,9 @@
+* {
+    padding: 10px;
+}
+
+.imagen {
+    background-color: blue;
+    height: 500px;
+    padding: 10px 10px;
+}

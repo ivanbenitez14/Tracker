@@ -1,0 +1,90 @@
+
+
+.navbar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    padding: 30px !important;
+    gap: 20px;
+    border: 1px solid lightgrey;
+    border-top: none;
+
+}
+
+.nombrecompleto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px !important;
+    border: 1px solid lightgrey;
+    border-top: none; 
+}
+
+#perfil {
+    margin-top: 20px;
+}
+
+.foto-perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.section-inputs1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.birthday {
+    width: 100%;
+}
+
+.pais {
+    width: 100%;
+}
+
+.telefono {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.direccion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.section-inputs2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.provincia {
+    width: 50%;
+}
+
+.ciudad {
+    width: 50%;
+}
+
+.botonera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}

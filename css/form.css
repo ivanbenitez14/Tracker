@@ -10,13 +10,41 @@
     gap: 20px;
     border: 1px solid lightgrey;
     border-top: none;
+    color: #466f88;
+    font-size: 20px;
 
+}
+
+h1 {
+    color: #6F73D2;
+    margin-bottom: 30px !important;
 }
 
 .nombrecompleto {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nombre {
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
+}
+
+#nombre {
+    border: 1px solid lightgrey;
+}
+
+.apellido {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#apellido {
+    border: 1px solid lightgrey;
 }
 
 .form {
@@ -24,7 +52,8 @@
     flex-direction: column;
     padding: 20px 50px !important;
     border: 1px solid lightgrey;
-    border-top: none; 
+    border-top: none;
+     
 }
 
 #perfil {
@@ -49,8 +78,14 @@
     width: 100%;
 }
 
+#birthday {
+    color: grey;
+    border: 1px solid lightgrey;
+}
+
 .pais {
     width: 100%;
+    border: 1px solid lightgrey;
 }
 
 .telefono {
@@ -60,11 +95,19 @@
     margin-top: 10px;
 }
 
+#telefono {
+    border: 1px solid lightgrey;
+}
+
 .direccion {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 10px;
+}
+
+#direccion {
+    border: 1px solid lightgrey;
 }
 
 .section-inputs2 {
@@ -76,15 +119,32 @@
 
 .provincia {
     width: 50%;
+    border: 1px solid lightgrey;
 }
 
 .ciudad {
     width: 50%;
+    border: 1px solid lightgrey;
 }
 
-.botonera {
+.botones {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 25px;
+}
+
+.btn-atras {
+    border: 1px solid grey;
+    background-color: white;
+    width: 100px;
+    height: 40px;
+}
+
+.btn-siguiente {
+    background-color: #6F73D2;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 40px;
 }

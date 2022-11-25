@@ -27,16 +27,26 @@
             <div class="col-9 form">
 
                 <h1>Datos personales</h1>
-                <p>Los campos con <span id="ast" >*</span> son obligatorios.</p>
 
                 <form action="" method="">
 
-                    <label class="nombrecompleto" for="nombrecompleto">
+                    <div class="nombrecompleto">
 
-                        <span>Nombre completo</span>
-                        <input id="nombrecompleto" name="nombrecompleto" placeholder="" />
-    
-                    </label>
+                        <label class="nombre" for="nombre">
+
+                            <span>Nombre</span>
+                            <input id="nombre" name="nombre" placeholder="" />
+        
+                        </label>
+
+                        <label class="apellido" for="apellido">
+
+                            <span>Apellido</span>
+                            <input id="apellido" name="apellido" placeholder="" />
+        
+                        </label>
+
+                    </div>
 
                     <h6 id="perfil">Foto de perfil</h6>
 
@@ -57,7 +67,7 @@
 
                         <label class="birthday" for="birthday">
                             <span>Fecha de nacimiento</span>
-                            <input type="date" name="birthday" placeholder="Fecha de nacimiento"/>
+                            <input id="birthday" type="date" name="birthday" placeholder="Fecha de nacimiento"/>
                         </label>
                         
                         <select class="pais">
@@ -98,11 +108,11 @@
 
                     </div>
 
-                    <div class="botonera">
+                    <div class="botones">
 
-                        <button type="button" class="btn btn-primary">Atrás</button>
+                        <button type="button" class="btn-atras">Atrás</button>
 
-                        <button type="button" class="btn btn-primary">Siguiente</button>
+                        <button type="button" class="btn-siguiente">Siguiente</button>
 
                     </div>
 

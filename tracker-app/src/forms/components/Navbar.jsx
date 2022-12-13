@@ -16,38 +16,36 @@ export const Navbar = () => {
 
   return (
     <>
-      <div class="container">
-        <div class="row">
-          <div class="col navbar">
+      <div class="row">
+        
+        <div class="col navbar">
 
-            <div>
-              <button id="personal" onClick={onPersonalDataClick}>
-                Datos Personales
-              </button>
-            </div>
-
-            <div>
-                <button id="contacts" onClick={onContactsClick}>
-                    Contactos
-                </button>
-            </div>
-
-            <div>
-                Documentos
-            </div>
-
-            <div>
-                Datos laborales
-            </div>
-
-            <div>
-                Datos adicionales
-            </div>
-
+          <div>
+            <button id="personal" onClick={onPersonalDataClick}>
+              Datos Personales
+            </button>
           </div>
 
+          <div>
+              <button id="contacts" onClick={onContactsClick}>
+                  Contactos
+              </button>
+          </div>
+
+          <div>
+              Documentos
+          </div>
+
+          <div>
+              Datos laborales
+          </div>
+
+          <div>
+              Datos adicionales
+          </div>
 
         </div>
+
       </div>
     </>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-
+import './AuthStyles.css'
 export const AuthPage = () => {
 
 
@@ -15,7 +15,7 @@ export const AuthPage = () => {
             <p>Ingresa para acceder a tus configuraciones</p>
           </div>
 
-          <form action="" method="">
+          <form id="formulario" action="" method="">
             <label for="email">
               <span>Email</span>
               <input id="email" name="email" placeholder="" />

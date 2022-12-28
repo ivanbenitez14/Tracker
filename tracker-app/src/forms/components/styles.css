@@ -8,20 +8,29 @@
     flex-direction: column !important;
     justify-content: flex-start !important;
     align-items: flex-start !important;
-    padding: 20px !important;
+    padding: 15px !important;
     gap: 20px;
     border: 1px solid lightgrey;
     border-top: none;
+    border-left: none;
 }
 
-#personal {
+.personal {
     background-color: white;
     border: none;
     color: #466f88;
     font-size: 20px;
 }
 
-#contacts {
+.personal-active {
+    background-color: white;
+    border: none;
+    color: red;
+    font-size: 20px;
+}
+
+
+.contacts {
     background-color: white;
     border: none;
     color: #466f88;

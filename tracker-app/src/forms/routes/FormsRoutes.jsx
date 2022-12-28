@@ -10,11 +10,11 @@ export const FormsRoutes = () => {
   return (
     <Routes>
 
-      <Route path="personal" element={ <PersonalData /> } />
-      <Route path="contacts" element={ <Contacts /> } />
-      <Route path="docs" element={ <Docs /> } />
-      <Route path="laboral" element={ <LaboralData /> } />
-      <Route path="aditional" element={ <AditionalData /> } />
+      <Route path="/personal" element={ <PersonalData /> } />
+      <Route path="/contacts" element={ <Contacts /> } />
+      <Route path="/docs" element={ <Docs /> } />
+      <Route path="/laboral" element={ <LaboralData /> } />
+      <Route path="/aditional" element={ <AditionalData /> } />
 
       <Route path="/*" element={ <Navigate to="/personal" /> } />
 

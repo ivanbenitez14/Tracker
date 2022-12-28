@@ -5,22 +5,13 @@ import '../contacts/styles.css'
 export const Contacts = () => {
   return (
     <>
-      <div class="container">
+      <div class="row">
 
-        <div class="row">
-
-          <div className="col">
-            <Navbar />
-          </div>
-
-          <div class="col-9">
-            <h1>Contactos</h1>
-          </div>
-
+        <div class="col-12">
+          <h1>Contactos</h1>
         </div>
 
       </div>
-
     </>
   )
 }

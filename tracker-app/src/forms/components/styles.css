@@ -25,7 +25,7 @@
 .personal-active {
     background-color: white;
     border: none;
-    color: red;
+    border-bottom: 1px solid #466f88;
     font-size: 20px;
 }
 

@@ -8,17 +8,7 @@ import { TrackerApp } from './TrackerApp'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-    <div class="row">
-
-      <div className="col">
-        <Navbar />
-      </div>
-
-      <div class="col-9">
-      <TrackerApp />
-      </div>
-
-    </div>     
+      <TrackerApp />   
     </BrowserRouter>
   </React.StrictMode>
 )

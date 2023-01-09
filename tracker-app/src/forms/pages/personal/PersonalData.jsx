@@ -1,95 +1,88 @@
 import React from "react";
-import { Navbar } from "../../components/Navbar";
+import { useNavigate } from "react-router";
+import useForm from "../../../hooks/useForm";
 import "../personal/styles.css";
 
 export const PersonalData = () => {
+  const [values, handleChange] = useForm();
+  const navigate = useNavigate();
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    if(values){
+      navigate('/contacts')
+    }
+  }
   return (
     <>
-      <div class="row">
-
-        <div class="col-12">
+      <div className="row">
+        <div className="col-12">
           <h1>Datos personales</h1>
-
-          <form action="" method="">
-            <div class="nombrecompleto">
-              <label class="nombre" for="nombre">
+          <form onSubmit={onSubmit}>
+            <div className="nombrecompleto">
+              <label className="nombre" for="nombre">
                 <span>Nombre</span>
-                <input id="nombre" name="nombre" placeholder="" />
+                <input id="nombre" name="nombre" placeholder=""  onChange={handleChange}/>
               </label>
 
-              <label class="apellido" for="apellido">
+              <label className="apellido" for="apellido">
                 <span>Apellido</span>
-                <input id="apellido" name="apellido" placeholder="" />
+                <input id="apellido" name="apellido" placeholder=""   onChange={handleChange}/>
               </label>
             </div>
 
-            <h6 id="perfil">Foto de perfil</h6>
-
-            <div class="foto-perfil">
-              <picture>
-                <img src="" alt="foto-perfil" />
-              </picture>
-
-              <div class="archivo">
-                <span>Suelta tu archivo aquí o</span>
-                <input type="file" id="file" href=""></input>
-              </div>
-            </div>
-
-            <div class="section-inputs1">
-              <label class="birthday" for="birthday">
+            <div className="section-inputs1">
+              <label className="birthday" for="birthday">
                 <span>Fecha de nacimiento</span>
                 <input
                   id="birthday"
                   type="date"
                   name="birthday"
                   placeholder="Fecha de nacimiento"
+                  onChange={handleChange}
                 />
               </label>
+            </div>
 
-              <select class="pais">
+            <label className="telefono" for="telefono">
+              <span>Telefono</span>
+              <input id="telefono" name="telefono"  onChange={handleChange} />
+            </label>
+
+            <label className="direccion" for="direccion">
+              <span>Direccion</span>
+              <input id="direccion" name="direccion"  onChange={handleChange}/>
+            </label>
+
+            <div className="section-inputs2">
+            <select className="pais" name="pais" onChange={handleChange}>
                 <option value="value1" selected>
                   País
                 </option>
-                <option value="value2">Argentina</option>
-                <option value="value3">Brasil</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
               </select>
-            </div>
 
-            <label class="telefono" for="telefono">
-              <span>Telefono</span>
-              <input id="telefono" name="telefono" />
-            </label>
-
-            <label class="direccion" for="direccion">
-              <span>Direccion</span>
-              <input id="direccion" name="direccion" />
-            </label>
-
-            <div class="section-inputs2">
-              <select class="provincia">
+              <select className="provincia" name="provincia" onChange={handleChange}>
                 <option value="value1" selected>
                   Provincia
                 </option>
-                <option value="value2">Buenos Aires</option>
-                <option value="value3">Córdoba</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Córdoba">Córdoba</option>
               </select>
 
-              <select class="ciudad">
+              <select className="ciudad" name="ciudad" onChange={handleChange}>
                 <option value="value1" selected>
                   Ciudad
                 </option>
-                <option value="value2">C.A.B.A.</option>
-                <option value="value3">Córdoba</option>
+                <option value="C.A.B.A.">C.A.B.A.</option>
+                <option value="Córdoba">Córdoba</option>
               </select>
             </div>
 
-            <div class="botones">
-              <button type="button" class="btn-atras">
-                Atrás
-              </button>
+            <div className="botones">
 
-              <button type="button" class="btn-siguiente">
+              <button type="submit" className="btn-siguiente">
                 Siguiente
               </button>
             </div>

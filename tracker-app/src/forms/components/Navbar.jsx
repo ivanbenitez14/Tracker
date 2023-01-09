@@ -20,12 +20,8 @@ export const Navbar = () => {
     return navigate('/docs');
   }
 
-  const onLaboralClick = () => {
-    return navigate('/laboral');
-  }
-
-  const onAditionalClick = () => {
-    return navigate('/aditional');
+  const logout = () => {
+    navigate('/auth/logout')
   }
 
   useEffect(() => {
@@ -60,16 +56,9 @@ export const Navbar = () => {
           </div>
 
           <div>
-            <button className={pathname === '/laboral' ? 'personal-active' : 'personal' } onClick={onLaboralClick}>
-              <i class="bi bi-card-checklist"></i>  
-              <span>Documentos laborales</span>
-            </button>
-          </div>
-
-          <div>
-            <button className={pathname === '/aditional' ? 'personal-active' : 'personal' } onClick={onAditionalClick}>
-              <i class="bi bi-file-earmark-diff-fill"></i>
-              <span>Documentos adicionales</span>
+            <button className={pathname === '/docs' ? 'personal-active' : 'personal' } onClick={logout}>
+            <i class="bi bi-box-arrow-left"></i>
+              <span>Cerrar Sesión</span>
             </button>
           </div>
 

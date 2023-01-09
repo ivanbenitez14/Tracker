@@ -1,38 +1,50 @@
 import React from "react";
+import { useNavigate } from "react-router";
+import useForm from "../../hooks/useForm";
 import './AuthStyles.css'
 export const AuthPage = () => {
+  const navigate = useNavigate();
+  const[ values, handleChange] = useForm();
 
-
+  const onSubmit = (e) => {
+    e.preventDefault();
+    if(values.email && values.password){
+      navigate('/personal', values)
+    }
+  }
 
   return (
     <>
-      <div class="row">
-        <div class="col login">
-          <img class="empresa" src="" alt="logo-empresa" />
+      <div className="row">
+        <div className="col login">
+          <img className="empresa" src="" alt="logo-empresa" />
 
-          <div class="header">
+          <div className="header">
             <h1>Bienvenidos a Tracker!</h1>
             <p>Ingresa para acceder a tus configuraciones</p>
           </div>
 
-          <form id="formulario" action="" method="">
-            <label for="email">
-              <span>Email</span>
-              <input id="email" name="email" placeholder="" />
-            </label>
+          <form onSubmit={onSubmit} className="form-class">
+             <label for="email">
+                <span>Email</span>
+              </label>
+            
+              <input className="input-class" id="email" name="email" placeholder="" type="email" onChange={handleChange} />
 
             <label for="password">
               <span>Password</span>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                placeholder=""
-              />
             </label>
+            <input
+              className="input-class"
+              type="password"
+              id="password"
+              name="password"
+              onChange={handleChange}
+              placeholder=""
+            />
 
-            <div class="atajos">
-              <label for="checkbox" class="checkbox-label">
+            {/* <div className="atajos">
+              <label for="checkbox" className="checkbox-label">
                 <input type="checkbox" id="checkbox" />
                 Recordarme
               </label>
@@ -40,14 +52,14 @@ export const AuthPage = () => {
               <a id="links" href="">
                 Olvide mi contraseña
               </a>
-            </div>
+            </div> */}
 
-            <button id="register-btn" type="submit" class="submit-btn">
+            <button id="register-btn" type="submit" className="submit-btn">
               Ingresar
             </button>
           </form>
 
-          <button class="google-btn">
+          <button className="google-btn">
             <picture>
               <img
                 src="https://freesvg.org/img/1534129544.png"
@@ -57,7 +69,7 @@ export const AuthPage = () => {
             <span>Ingresar con Google</span>
           </button>
 
-          <div class="footer">
+          <div className="footer">
             <span>No tienes una cuenta?</span>
             <a id="links" href="">
               Registrarme
@@ -65,7 +77,7 @@ export const AuthPage = () => {
           </div>
         </div>
 
-        <div class="col-6 imagen">
+        <div className="col-6 imagen">
           <img
             id="right-img"
             src="https://media.istockphoto.com/id/1257374139/vector/city-map.jpg?s=612x612&w=0&k=20&c=4ornn3uaf7P956FVKOOJ9LuRTwJMS72w2bUjPAFLtQQ="

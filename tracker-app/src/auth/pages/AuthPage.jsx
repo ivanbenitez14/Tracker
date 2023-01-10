@@ -17,7 +17,7 @@ export const AuthPage = () => {
     <>
       <div className="row">
         <div className="col login">
-          <img className="empresa" src="" alt="logo-empresa" />
+          {/* <img className="empresa" src="" alt="logo-empresa" /> */}
 
           <div className="header">
             <h1>Bienvenidos a Tracker!</h1>

@@ -74,7 +74,7 @@ label{
   align-content: flex-start;
 }
 .submit-btn{
-  width: 50%;
+  width: 70%;
   margin: 15px;
   border-radius: 8px;
 }
@@ -94,7 +94,7 @@ label{
 
 .input-class{
   width: 70%;
-  height: 30px;
+  height: 40px;
   border-radius: 10px;
 }
 
@@ -105,7 +105,7 @@ label{
 .google-btn {
   margin-top: 10px;
   height: 40px;
-  width: 58%;
+  width: 68%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,6 +113,7 @@ label{
   cursor: pointer;
   background-color: white;
   border: 1px solid lightgray;
+  border-radius: 8px;
 }
 
 .google-btn:hover {
